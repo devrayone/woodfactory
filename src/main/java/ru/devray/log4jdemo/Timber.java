@@ -1,5 +1,7 @@
 package ru.devray.log4jdemo;
 
+import static ru.devray.log4jdemo.Main.logger;
+
 public class Timber {
     int number;
     int weight;
@@ -7,6 +9,6 @@ public class Timber {
     public Timber(int number, int weight) {
         this.number = number;
         this.weight = weight;
-        System.out.println("Constructed timber.");
+        logger.trace("Constructed timber.");
     }
 }
